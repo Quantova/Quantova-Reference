@@ -37,7 +37,7 @@ Q-Crypto is Quantova's implementation of the NIST post quantum standards, writte
 
 ## The QCore SDK family
 
-QCore is the client core, one implementation of the four things a client has to get exactly right, key derivation, transaction building, signing, and speaking the gateway wire. It is written once in Rust as QCore.rs, and QCore.js and QCore.py are generated over that same core so a signature is never rewritten in another language. QCore.js is published on npm as `@qunatovainc/qcore` and carries a compiled core build for the browser and a native build for Node. QCore.py is the Python binding. All three derive the same Q1 address from the same seed and sign the same transaction body to the same bytes. The client passes the highest fee it will accept and the core refuses to sign a fee the gateway reports above it, so a gateway cannot inflate the fee and drain the account. Read the QCore.rs README for the full surface.
+QCore is the client core, one implementation of the four things a client has to get exactly right, key derivation, transaction building, signing, and speaking the gateway wire. It is written once in Rust as QCore.rs, and QCore.js and QCore.py are generated over that same core so a signature is never rewritten in another language. QCore.js is published on npm as `@quantovainc/qcore` and carries a compiled core build for the browser and a native build for Node. QCore.py is the Python binding. All three derive the same Q1 address from the same seed and sign the same transaction body to the same bytes. The client passes the highest fee it will accept and the core refuses to sign a fee the gateway reports above it, so a gateway cannot inflate the fee and drain the account. Read the QCore.rs README for the full surface.
 
 ## QNS
 
